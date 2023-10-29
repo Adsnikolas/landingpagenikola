@@ -1,0 +1,97 @@
+.qualidades {
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    background-image: url(banner03.png);
+    /* background-color: white; */
+
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+
+}
+
+.title-qualidade h1 {
+    border-bottom: 1px solid black;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 255, 0);
+}
+
+.qlt-title {
+    font-size: 40px;
+
+}
+
+.card-qualit h1 {
+    margin: 10px 0;
+    color: #d4ffcf;
+
+}
+
+.card-qualit p {
+    color: white;
+    font-size: 18px;
+}
+
+.qlt-title {
+    /* border-bottom: 1px solid rgb(255, 255, 255); */
+    color: #d4ffcf;
+
+    transform: 'translate(0,-39px)'
+}
+
+.card-qualit {
+    /* Comece com a opacidade 0 para a animação de fade-in */
+
+    min-height: 100px;
+    display: inline-block;
+    width: 45%;
+    margin: 10px 5px;
+    padding: 16px;
+    background-color: rgb(29, 29, 29);
+
+
+    /* background-color: rgba(31, 31, 31, 0.932); */
+    color: white;
+}
+
+@media (max-width: 720px) {
+
+    .qlt-title {
+        width: 100%;
+        color: #d4ffcf;
+
+        border-bottom: 1px solid #d4ffcf;
+        font-size: 30px !important;
+        transform: translate(0, -20px)
+    }
+
+
+    .card-qualit {
+        text-align: center;
+        min-height: 150px;
+        display: inline-block;
+        width: 100%;
+        margin: 10px auto;
+        padding: 16px;
+        /* background-color: rgba(31, 31, 31, 0.932); */
+        color: white;
+    }
+
+
+    .qualidades {
+        width: 100%;
+        padding: 40px;
+        /* background-image: url(bg04.jpg); */
+        background-image: url(banner03.png);
+        background-attachment: fixed;
+
+        /* background-color: white; */
+        background-size: cover;
+        background-position: 64%;
+        background-repeat: no-repeat;
+    }
+
+
+}

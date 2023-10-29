@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+body {
+  color: white;
+  background-color: #000000;
+}
+
+.clear {
+  clear: both;
+}
+
+/* ... (estilos globais) ... */
+
+.logominha {
+  width: 100px;
+  float: left;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.54);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  transition: top 0.3s ease, transform 0.3s ease;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  transform: translateY(0);
+  flex-direction: row-reverse;
+  /* Altere a direção da flexbox para inverter o alinhamento */
+}
+
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  color: #00ff00;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/* Estilos dos links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  transition: max-height 0.3s ease;
+}
+
+.nav-links a {
+  font-size: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #d4ffcf;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00ff2a;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+  .menu-icon {
+    display: block;
+    order: 1;
+    /* Mude a ordem para colocar o ícone do menu no início */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-end;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-links.open {
+    max-height: 1000px;
+    transition: max-height 0.5s ease;
+  }
+
+  .navbar.scrolled {
+    transition: top 0.5s ease, transform 0.5s ease;
+  }
+
+  .menu-icon.open {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+  }
+}

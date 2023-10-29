@@ -1,0 +1,133 @@
+.inicio {
+    background-image: url('imagem_desktop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 100%;
+    height: 800px;
+    /* Altura padrão para telas maiores */
+    /* Imagem de fundo padrão para telas maiores */
+    display: flex;
+    justify-content: flex-start;
+    /* Alinhar à esquerda */
+    align-items: center;
+    /* Centralizar verticalmente */
+}
+
+.ctaDiv-Mobile {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+
+    /* Quando a largura da tela for igual ou menor que 768px */
+    .inicio {
+        height: 500px;
+        /* Altura para telas menores */
+        background-image: url('imagem_mobile.jpg');
+        /* Imagem de fundo para telas menores */
+    }
+
+
+    .ctaDiv-Mobile {
+        display: block;
+    }
+
+    .ctaDiv {
+        padding: 20px;
+        display: none;
+        text-align: left;
+        transform: translate(200px, 0);
+        /* Alinhar o texto à esquerda */
+    }
+}
+
+.ctaDiv {
+    box-shadow: 2px 6px 6px rgba(0, 0, 0, 0.375);
+    border-radius: 5px;
+    transform: translate(20px, -50px);
+    background-color: rgba(0, 0, 0, 0.54);
+    box-shadow: 10px;
+    width: 550px;
+    padding: 20px;
+    text-align: left;
+    /* Alinhar o texto à esquerda */
+}
+
+.ctaDiv h1 {
+    color: rgb(0, 255, 0);
+    font-family: "Visby", Sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+
+
+.ctaDiv p {
+    color: white;
+    font-size: 20px;
+    margin: 0;
+}
+
+.ctaDiv-Mobile {
+    margin: 0 auto;
+    transform: translate(0px, -60px);
+    background-color: rgba(17, 17, 17, 0.862);
+    border-radius: 5px;
+
+
+    width: 90%;
+    padding: 20px;
+    text-align: center;
+    /* Alinhar o texto à esquerda */
+}
+
+.ctaDiv-Mobile p {
+    color: white;
+    font-size: 20px;
+    text-align: justify;
+    margin: 0;
+}
+
+.ctaDiv-Mobile h1 {
+    color: rgb(0, 255, 0);
+    font-family: "Visby", Sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 1em;
+}
+
+.ctaDiv button {
+    background-color: rgb(0, 182, 0);
+
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+.ctaDiv-Mobile button {
+    background-color: rgb(0, 182, 0);
+    color: #000000;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.ctaDiv button:hover {
+    background-color: rgb(0, 255, 0);
+    transition: 0.5s;
+}
+
+
+.ctaDiv-Mobile button {
+    transition: 0.5s;
+    background-color: rgb(0, 255, 0);
+}

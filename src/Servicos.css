@@ -1,0 +1,294 @@
+.card-container {
+
+    padding-top: 30px;
+    padding-bottom: 40px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+    /* Certifique-se de que o z-index seja maior que o carrossel */
+}
+
+.slick-slider {
+
+    /* padding: 30px 0; */
+
+    background-image: url(bg02.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+
+.card-c {
+    z-index: 999;
+    background-position: center;
+    background-size: 100%;
+    height: 300px;
+
+    width: 95%;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 10px auto;
+    /* Adicione espaçamento vertical de 10px e centralize horizontalmente */
+
+    /* Estilos para sombreamento personalizado */
+    background-color: #262626a2;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card-c p {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #0e0e0e81;
+    color: white;
+    transform: translate(0, 90px);
+}
+
+/* ... os demais estilos permanecem iguais */
+
+/* ... os demais estilos permanecem iguais */
+
+
+.card-c:hover {
+
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o carrossel não ultrapassar a tela */
+.slick-slider {
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    /* Certifique-se de que o z-index seja maior que as bullets */
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: -0px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 10px 0;
+    z-index: 3;
+}
+
+
+.slick-dots li {
+    margin: 0 4px;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #00fc12;
+    border-radius: 50%;
+
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li button {
+    width: 10px;
+    height: 10px;
+    border: none;
+    background-color: #00fc12;
+
+    opacity: 1;
+    /* Defina a opacidade para 1 para que as dots sejam completamente visíveis */
+    border-radius: 50%;
+    padding: 0;
+    cursor: pointer;
+}
+
+.slick-dots li.slick-active button:before {
+    opacity: none;
+    color: rgba(255, 0, 0, 0);
+}
+
+.title-services {
+    font-size: 36px;
+    transform: translate(0, -20px);
+    z-index: 800;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    color: #d4ffcf;
+    width: 90%;
+    background-color: #00cd0e00;
+    border-radius: 2px;
+    padding: 5px 15px;
+    margin: 0 auto;
+}
+
+
+.slick-dots li.slick-active button:before {
+    opacity: none;
+    color: rgba(255, 0, 0, 0);
+}
+
+
+/* Estilos para o modal */
+/* Estilos para o modal */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 9999;
+    /* Valor alto para garantir que o modal fique acima de todos os outros elementos */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 10000;
+    /* Valor ainda mais alto para a área de conteúdo do modal */
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+    position: relative;
+    /* Adicione essa propriedade para o botão de fechar */
+}
+
+/* Estilos CSS para o botão de fechar */
+/* Estilos CSS para o botão de fechar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    /* Ajuste a posição vertical conforme necessário */
+    right: 10px;
+    /* Ajuste a posição horizontal conforme necessário */
+    background-color: #fff;
+    /* Cor de fundo do botão */
+    border: 1px solid #ccc;
+    /* Borda do botão */
+    /* padding: -50px 10px; */
+    transform: translate(20px, -12px);
+    /* Espaçamento interno do botão */
+    cursor: pointer;
+    z-index: 999;
+    /* Certifique-se de que o botão fique na frente de todo o conteúdo do modal */
+}
+
+
+/* Estilos adicionais conforme necessário para o modal responsivo */
+
+
+/* Estilos adicionais conforme necessário para o modal responsivo */
+
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.modal p {
+    font-size: 16px;
+    color: #555;
+}
+
+.modal ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.modal li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #777;
+}
+
+/* Estilizar o botão de fechar */
+.modal button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #333;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    color: rgb(0, 162, 0);
+    /* Mudar a cor quando o mouse passa por cima */
+}
+
+
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 720px) {
+    .card-c {
+        margin: 10px auto;
+    }
+
+    .title-services {
+        transform: translate(0, 10px);
+        z-index: 999;
+        position: relative;
+        text-align: center;
+        text-transform: uppercase;
+        color: #d4ffcf;
+
+
+        width: 90%;
+        font-size: 28px;
+        border-top: 1px solid white;
+
+        border-bottom: 1px solid white;
+        border-radius: 2px;
+        padding: 5px 15px;
+        margin: 0 auto;
+    }
+
+
+
+
+
+    .services-cont {
+        transform: translate(0, -50px);
+    }
+}
+
+/* Estilos para dispositivos maiores */
+@media (min-width: 721px) {
+    .card-c {
+        margin: 0 auto;
+        /* Adicione um espaçamento lateral de 10px */
+    }
+}
+
+@media only screen and (max-device-width: 1366px) {
+    .slick-slider {
+        background-attachment: scroll;
+    }
+}

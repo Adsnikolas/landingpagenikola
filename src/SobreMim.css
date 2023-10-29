@@ -1,0 +1,118 @@
+/* Estilos padrão para o componente "sobremim" */
+.sobremim {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+    /* Cor de fundo de exemplo */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Sombra de exemplo */
+}
+
+.sobremim-foto {
+    flex: 1;
+    /* Ocupa metade da largura no desktop */
+    max-width: 50%;
+    /* Define a largura máxima para a imagem */
+    display: flex;
+    justify-content: center;
+    /* Centraliza horizontalmente */
+    align-items: center;
+    /* Centraliza verticalmente */
+}
+
+.sobremim-foto img {
+    max-width: 500;
+    width: 80%;
+    /* Redimensiona a imagem proporcionalmente */
+    height: auto;
+    /* Altura automática para manter a proporção */
+    /* Deixa a imagem circular (opcional) */
+}
+
+.sobremim-informacoes {
+    flex: 1;
+    /* Ocupa metade da largura no desktop */
+    padding: 20px;
+}
+
+
+
+/* Estilos para textos */
+.sobremim-informacoes h1 {
+    font-size: 4vw;
+
+    /* Tamanho maior para o título */
+    margin: 0;
+    color: rgb(0, 255, 0);
+    /* Cor verde */
+}
+
+
+.sobremim-informacoes p {
+    font-size: 1.5vw;
+    /* Tamanho maior para o parágrafo */
+    margin: 10px 0;
+    /* Cor verde */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    /* Tamanho maior para os itens da lista */
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    color: rgb(0, 255, 0);
+    /* Cor verde */
+}
+
+/* Exemplo de estilo para a lista de habilidades */
+li::before {
+    content: "•";
+    /* Adiciona um ponto de lista personalizado */
+    margin-right: 5px;
+    color: rgb(0, 255, 0);
+    /* Cor verde */
+    font-weight: bold;
+}
+
+/* Estilos para dispositivos móveis (largura máxima de 768px) */
+@media screen and (max-width: 768px) {
+    .sobremim-foto img {
+        max-width: 500;
+        width: 300px;
+        /* Redimensiona a imagem proporcionalmente */
+        height: auto;
+        /* Altura automática para manter a proporção */
+        /* Deixa a imagem circular (opcional) */
+    }
+
+    .sobremim {
+        flex-direction: column;
+        /* Empilhar elementos verticalmente */
+    }
+
+    .sobremim-foto,
+    .sobremim-informacoes {
+        width: 100%;
+        /* Ocupar toda a largura */
+    }
+
+    .sobremim-informacoes h1 {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .sobremim-informacoes p {
+        font-size: 15px;
+        /* Tamanho maior para o parágrafo */
+        margin: 10px 0;
+        /* Cor verde */
+    }
+}
